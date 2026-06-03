@@ -1,0 +1,7 @@
+{
+  "name": "engcoec-website",
+  "framework": "hugo",
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public",
+  "installCommand": ""
+}
