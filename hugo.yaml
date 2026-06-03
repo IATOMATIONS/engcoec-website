@@ -1,10 +1,32 @@
 baseURL: 'https://www.engcoec.com/'
 languageCode: 'es-ec'
 title: 'ENGCO SAS — Engineering Contractor'
-theme: 'ananke'
 publishDir: 'public'
-disableKinds: ['RSS', 'sitemap', 'robotsTXT', '404']
 
 params:
   description: 'ENGCO SAS — Ingeniería civil, eléctrica, mecánica. Construcción, montajes industriales, fiscalización y suministros en Ecuador.'
   author: 'ENGCO SAS'
+
+menu:
+  main:
+    - name: Inicio
+      url: /
+      weight: 1
+    - name: Nosotros
+      url: /nosotros/
+      weight: 2
+    - name: Proyectos
+      url: /proyectos/
+      weight: 3
+    - name: Divisiones
+      url: /divisiones/
+      weight: 4
+    - name: Contacto
+      url: /contacto/
+      weight: 5
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
